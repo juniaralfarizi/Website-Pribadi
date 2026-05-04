@@ -1,0 +1,210 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Verdana', sans-serif;
+    box-sizing: border-box;
+}
+
+.page-container {
+    background-color: #081b29;
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.navigasi {
+    background-color: #081b29;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+
+.logo a {
+    text-decoration: none;
+    color: white;
+}
+
+.menu ul li {
+    list-style: none;
+    display: inline-block;
+    margin-left: 30px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: 0.1s;
+}
+
+.menu ul li a:hover {
+    color: lightskyblue;
+    border-bottom: 3px solid lightskyblue;
+    font-style: italic;
+}
+
+.banner {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.banner img {
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+    border: 5px solid white;
+    margin-bottom: 20px;
+    object-fit: cover;
+}
+
+.content-section {
+    flex: 1;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.box-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-top: 50px;
+}
+
+.box {
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    width: 300px;
+    border-radius: 20px;
+    transition: 0.4s;
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+
+.box img  {
+    width: 100%;
+    height: 180px;
+    object-fit: contain; 
+    background-color: white;
+    border-radius: 15px;
+    margin-bottom: 15px;
+    padding: 10px;
+}
+
+.box:hover {
+    transform: translateY(-15px);
+    background-color: white;
+    color: black;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+}
+
+.contact-icon {
+    width: 150px;
+    margin: 40px 0;
+}
+
+.footer {
+    background-color: #081b29;
+    text-align: center;
+    padding: 25px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+h1 span::before {
+    content: '';
+    animation: gerak infinite 10s ease;
+}
+
+@keyframes gerak {
+    0% { content: 'Hai...'; }
+    33% { content: 'Selamat Datang'; }
+    50% { content: 'Saya M. Juniar Alfarizi'; }
+    70% { content: 'Mahasiswa Universitas Islam Al`Azhar'; }
+    90% { content: 'Prodi Ilmu Komputer'; }
+    100% { content: 'Saya Berasal Dari Masbagik, Kabupaten Lombok Timur'; }
+}
+
+
+.contact-card h6 {
+    margin-bottom: 20px;
+    color: lightskyblue;
+}
+
+.contact-card {
+    max-width: 400px;
+    margin: 0 auto; 
+    padding: 30px;
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.contact-card h2 {
+    margin-bottom: 20px;
+    color: lightskyblue;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column; 
+    gap: 15px; 
+}
+
+.contact-form input, 
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: #081b29;
+    color: white;
+    font-size: 14px;
+    outline: none;
+}
+
+.contact-form input:focus, 
+.contact-form textarea:focus {
+    border-color: lightskyblue;
+}
+
+.btn-send {
+    padding: 12px;
+    background-color: lightskyblue;
+    border: none;
+    border-radius: 8px;
+    color: #081b29;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 16px;
+}
+
+.btn-send:hover {
+    background-color: lightskyblue;
+    letter-spacing: 1px;
+}
+
+.wa-container {
+    margin-top: 25px;
+    border-top: 1px solid;
+    padding-top: 15px;
+    color: lightskyblue;
+}
+
+.wa-number {
+    display: inline-block;
+    margin-top: 5px;
+    color: lightskyblue;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+}
